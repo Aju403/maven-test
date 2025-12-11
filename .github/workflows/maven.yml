@@ -1,0 +1,17 @@
+
+name: my-app1
+on:
+  push:
+    branches:
+      -main
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+     - name: run package
+       run: mvn -B package
+
+     - name: do listing
+       run: ls -lh target
