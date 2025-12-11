@@ -10,8 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-     - name: run package
-       run: mvn -B package
+      - name: Checkout
+        uses: actions/checkout@v6.0.1
+  
+      - name: run package
+        run: mvn -B package
 
-     - name: do listing
-       run: ls -lh target
+      - name: do listing
+        run: ls -lh target
