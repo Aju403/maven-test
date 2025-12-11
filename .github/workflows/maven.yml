@@ -18,3 +18,5 @@ jobs:
 
       - name: do listing
         run: ls -lh target
+      - name: unit test
+        run: mvn test
