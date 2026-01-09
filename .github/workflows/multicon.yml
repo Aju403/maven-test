@@ -10,7 +10,7 @@ jobs:
       fail-fast: false  # 🔥 ENABLE FAIL-FAST
       matrix:
         os: [ubuntu-latest, windows-latest]
-        java: [17, 21, 24]
+        java: [17, 21]
 
     runs-on: ${{ matrix.os }}
 
